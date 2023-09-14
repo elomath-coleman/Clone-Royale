@@ -9,7 +9,8 @@ public class SceneChanger : MonoBehaviour
     public static SceneChanger instance;
 
     [SerializeField] string menuSceneName;
-    [SerializeField] string howToPlaySceneName;
+    [SerializeField] string settingsSceneName;
+    [SerializeField] string friendsSceneName;
     [SerializeField] string creditsSceneName;
     [SerializeField] string gameSceneName;
 
@@ -26,9 +27,13 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(menuSceneName);
     }
 
-    public void LoadHowToPlayScene()
+    public void LoadSettingsScene()
     {
-        SceneManager.LoadScene(howToPlaySceneName);
+        SceneManager.LoadScene(settingsSceneName);
+    }
+    public void LoadFriendsScene()
+    {
+        SceneManager.LoadScene(friendsSceneName);
     }
 
     public void LoadCreditsScene()

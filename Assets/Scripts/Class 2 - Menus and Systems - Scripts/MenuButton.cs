@@ -9,9 +9,13 @@ public class MenuButton : MonoBehaviour
         SceneChanger.instance.LoadMenuScene();
     }
 
-    public void LoadHowToPlayScene()
+    public void LoadSettingsScene()
     {
-        SceneChanger.instance.LoadHowToPlayScene();
+        SceneChanger.instance.LoadSettingsScene();
+    }
+    public void LoadFriendsScene()
+    {
+        SceneChanger.instance.LoadSettingsScene();
     }
 
     public void LoadCreditsScene()

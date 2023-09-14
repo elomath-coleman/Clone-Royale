@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: Menu
-  howToPlaySceneName: How to Play
+  settingsSceneName: Settings
+  friendsSceneName: Friends
   creditsSceneName: Credits
   gameSceneName: Game
