@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class PlayerUnitInterfaceButton : MonoBehaviour, IPointerDownHandler
 {
@@ -11,6 +12,13 @@ public class PlayerUnitInterfaceButton : MonoBehaviour, IPointerDownHandler
     [SerializeField] GameObject unitPrefab;
     [SerializeField] float cost = 0;
     bool mouseDown = false;
+    [SerializeField] CurrencyManager currencyManager;
+    [SerializeField] TextMeshProUGUI costText;
+
+    void Start()
+    {
+        if (costText != null) costText.text = cost.ToString();
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,6 +35,8 @@ public class PlayerUnitInterfaceButton : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData data)
     {
+        if (currencyManager.GetCurrentCurrency() < cost) return;
+
         mouseDown = true;
         thisImage.color = Color.yellow;
         controller.PrepareUnitForSpawn(unitPrefab, cost);
