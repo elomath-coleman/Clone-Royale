@@ -4,32 +4,30 @@ using UnityEngine;
 
 public class UIScaleShift : MonoBehaviour
 {
-    [SerializeField] float scaleMagnatude = .35f;
+    [SerializeField] float scaleMagnitude = .35f;
     [SerializeField] float scaleDuration = .5f;
     float timer = 0;
     bool shifting = true;
 
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (shifting) RunShifting();
     }
 
     void RunShifting()
     {
-        timer += Time.deltaTime / scaleDuration;
-
         if (scaleDuration == 0)
         {
-            timer = Time.deltaTime;
+            timer += Time.deltaTime;
         }
         else timer += Time.deltaTime / scaleDuration;
 
-
         // Actual ScaleShift
-        transform.localScale = Vector3.one + (Vector3.one * scaleMagnatude * (1 - timer));
+        transform.localScale = Vector3.one + (Vector3.one * scaleMagnitude * (1 - timer));
 
-        if(timer >= 1)
+        if (timer >= 1)
         {
             transform.localScale = Vector3.one;
             shifting = false;
