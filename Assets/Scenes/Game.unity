@@ -842,7 +842,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 19.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.55
+  m_fontSize: 32.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.15
+  m_fontSize: 23.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2443,7 +2443,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.1
+  m_fontSize: 23.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3233,7 +3233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 370799745}
   thisImage: {fileID: 1046832441}
-  unitPrefab: {fileID: 8289654986426021640, guid: f6b31e5e63837f6409e9a7eeeaf5b4f4, type: 3}
+  unitPrefab: {fileID: 8289654986426021640, guid: b977d69723f93504e9b6ef937dde7ca6, type: 3}
   cost: 3
   currencyManager: {fileID: 1193352151}
   costText: {fileID: 336574553}
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.3
+  m_fontSize: 51.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4392,7 +4392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088a2dbf4cca3bc488f467d0eddab5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEndedPanel: {fileID: 0}
+  gameEndedPanel: {fileID: 1028361270}
 --- !u!4 &1544949438
 Transform:
   m_ObjectHideFlags: 0
@@ -4877,7 +4877,7 @@ Transform:
   m_GameObject: {fileID: 1766956550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -481.0744, y: -238.27203, z: 5.800431}
+  m_LocalPosition: {x: -481.233, y: -238.27203, z: 7.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5438,7 +5438,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.55
+  m_fontSize: 32.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
